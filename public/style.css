@@ -1,0 +1,145 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6fb;
+    color: #222;
+}
+
+header {
+    background: #182848;
+    color: white;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    background: #3157a4;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #203d79;
+}
+
+.hero {
+    background: #dce7ff;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.hero h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+    color: #182848;
+}
+
+main section {
+    padding: 35px 7%;
+}
+
+main section h2 {
+    margin-bottom: 20px;
+    color: #182848;
+}
+
+.event-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.event-card {
+    background: white;
+    padding: 22px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.event-card h3 {
+    margin-bottom: 12px;
+    color: #3157a4;
+}
+
+.event-card p {
+    margin: 9px 0;
+    line-height: 1.5;
+}
+
+.event-card button {
+    margin-top: 12px;
+}
+
+.auth-section {
+    max-width: 450px;
+    margin: 25px auto;
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.auth-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.auth-section input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#authMessage {
+    margin-top: 12px;
+}
+
+footer {
+    background: #182848;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    .hero h2 {
+        font-size: 25px;
+    }
+}
